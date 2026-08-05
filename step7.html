@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+
+<body onload="celebrate()">
+
+<div class="hearts"></div>
+
+<div class="container">
+
+<img src="images/step7.jpg" class="photo" alt="Final Photo">
+
+<h2>🎉 Final Surprise 🎉</h2>
+
+<h1>Happy Birthday, My Trusted Person ❤️</h1>
+
+<p>
+
+Today is your day...
+
+A day to smile,
+a day to celebrate,
+and a day to remember how special you are.
+
+Thank you for every memory,
+every smile,
+every lesson,
+and every moment you shared with me.
+
+If I have ever hurt you,
+once again...
+I'm truly sorry.
+
+I hope one day you'll forgive me.
+
+No matter where life takes us,
+my prayers for your happiness
+will always remain the same.
+
+May Allah bless you with
+a beautiful life,
+good health,
+success,
+peace,
+and endless happiness.
+
+✨ Ameen ✨
+
+Happy Birthday once again.
+
+Keep smiling...
+because your smile is one of the most beautiful things in this world.
+
+❤️🎂🌹
+</p>
+
+<button onclick="location.reload()">
+🎉 Watch Again
+</button>
+
+</div>
+
+<script>
+
+function celebrate(){
+
+confetti({
+particleCount:250,
+spread:180,
+origin:{y:0.6}
+});
+
+setInterval(()=>{
+confetti({
+particleCount:8,
+spread:90,
+origin:{
+x:Math.random(),
+y:Math.random()-0.2
+}
+});
+},2000);
+
+}
+
+</script>
+
+</body>
+</html>
